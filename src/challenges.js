@@ -8,7 +8,7 @@ const compareTrue = (parametro1, parametro2)=>{
 
 // Desafio 2 - Crie a função splitSentence
 
-const splitSentence = (string) => sring.split(" ")
+const splitSentence = (string) => string.split(" ")
 
 // Desafio 3 - Crie a função concatName
 
