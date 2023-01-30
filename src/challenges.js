@@ -145,6 +145,25 @@ for(letra of string){
 
 // Desafio 10 - Crie a função techList
 
+const techList = (array, string)=>{
+  let lista=[];
+  for(techs of array){
+     let objeto = {
+      tech:techs,
+      name:string
+     }
+     lista.push(objeto);
+
+  }
+
+  if(array===[]){
+      return []
+  } else {
+      return lista
+  }
+
+}
+
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
