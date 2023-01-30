@@ -8,6 +8,8 @@ const compareTrue = (parametro1, parametro2)=>{
 
 // Desafio 2 - Crie a função splitSentence
 
+const splitSentence = (string) => sring.split(" ")
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
