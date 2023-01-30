@@ -98,6 +98,51 @@ const fizzBuzz = (array) =>{
 
 // Desafio 9 - Crie a função encode e a função decode
 
+const encode = (string) => {
+
+  let stringModificada;
+
+for(letra of string){
+      if (letra==="a"){
+          stringModificada= string.replaceAll(letra, "1")
+      } else if(letra==="e"){
+          stringModificada= string.replaceAll(letra, "2")
+      } else if(letra==="i"){
+          stringModificada= string.replaceAll(letra, "3")
+      } else if(letra==="o"){
+          stringModificada= string.replaceAll(letra, "4")
+      } else if(letra==="u"){
+          stringModificada= string.replaceAll(letra, "5")
+      }
+  }
+
+  return stringModificada
+
+}
+
+
+const decode = (string) => {
+
+  let stringOriginal;
+
+for(letra of string){
+      if (letra==="1"){
+          stringOriginal= string.replaceAll(letra, "a")
+      } else if(letra==="2"){
+          stringOriginal= string.replaceAll(letra, "e")
+      } else if(letra==="3"){
+          stringOriginal= string.replaceAll(letra, "i")
+      } else if(letra==="4"){
+          stringOriginal= string.replaceAll(letra, "o")
+      } else if(letra==="5"){
+          stringOriginala= string.replaceAll(letra, "u")
+      }
+  }
+
+  return stringOriginal
+
+}
+
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
