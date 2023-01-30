@@ -56,7 +56,7 @@ const calcAllArea = (base, height, form)=>{
     } else if (form==="retângulo"){
         return calcRectangleArea (base, height)
     } else {
-        return "Não foi possível fazer o cálculo, insira uma forma geométrica válida"
+        return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
     }
 }
 
@@ -146,8 +146,9 @@ for(letra of string){
 // Desafio 10 - Crie a função techList
 
 const techList = (array, string)=>{
+  arrayOrdenado=array.sort()
   let lista=[];
-  for(techs of array){
+  for(techs of arrayOrdenado){
      let objeto = {
       tech:techs,
       name:string
