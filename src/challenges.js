@@ -1,7 +1,7 @@
 // Desafio 1 - Crie a função compareTrue
 
 const compareTrue = (parametro1, parametro2)=>{
-  let resultado = ((parametro1&&parametro2)===true)? "true" : "false"
+  let resultado = ((parametro1&&parametro2)===true)? true : false
 
   return resultado
 }
