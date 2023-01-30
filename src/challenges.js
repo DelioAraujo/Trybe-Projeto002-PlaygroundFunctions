@@ -46,14 +46,19 @@ const calcTriangleArea = (base, height)=> (base*height)/2;
 
 const calcRectangleArea = (base, height) => base*height;
 
-const calcAllArea = (base, height, form)=>{
+const calcAllAreas = (base, height, form)=>{
+    let resposta = ""
+
     if(form==="triângulo"){
-        return `O valor da área do triângulo é de: ${calcTriangleArea (base, height)}`
+        resposta = `O valor da área do triângulo é de: ${calcTriangleArea (base, height)}`
     } else if (form==="retângulo"){
-        return `O valor da área do retângulo é de: ${calcRectangleArea (base, height)}`
+        resposta = `O valor da área do retângulo é de: ${calcRectangleArea (base, height)}`
     } else {
-        return "Não foi possível fazer o cálculo, insira uma forma geométrica válida"
+        resposta =  "Não foi possível fazer o cálculo, insira uma forma geométrica válida"
     }
+
+    return resposta;
+
 }
 
 
