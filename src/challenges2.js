@@ -63,9 +63,9 @@ const hydrate = (string)=>{
       numeroDeDoses+=+numeros 
   }
 
-    
+  let conselho = (numeroDeDoses===1)? `${numeroDeDoses} copo de água` : `${numeroDeDoses} copos de água` 
  
-  return numeroDeDoses
+  return conselho
 
 
 }
