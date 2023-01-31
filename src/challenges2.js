@@ -38,14 +38,14 @@ const triangleCheck = (lineA, lineB, lineC) =>{
   let testA1 = lineA<lineB+lineC
   let testB1 = lineB<lineA+lineC
   let testC1 = lineC<lineB+lineA
-  let teste1 = (testA1 ===true && testB1===true && testC1===true)? "true" : "false";
+  let teste1 = (testA1 ===true && testB1===true && testC1===true)? true : false;
   //teste 2
   let testA2 = lineA>Math.abs(lineB-lineC)
   let testB2 = lineB>Math.abs(lineA-lineC)
   let testC2 = lineC>Math.abs(lineB-lineA)
-  let teste2 = (testA2 ===true && testB2===true && testC2===true)? "true" : "false";
+  let teste2 = (testA2 ===true && testB2===true && testC2===true)? true : false;
   //resultado
-  let resultado = (teste1==="true" && teste2==="true")? "true" : "false";
+  let resultado = (teste1===true && teste2===true)? true : false;
 
   return resultado
 
