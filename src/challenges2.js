@@ -1,11 +1,21 @@
 // Desafio 11 - Crie a função generatePhoneNumber
 
-const generatePhojeNumber = (array)=>{
+const generatePhoneNumber = (array)=>{
     
   let numeroFinal = `(${array[0]}${array[1]}) ${array[2]}${array[3]}${array[4]}${array[5]}${array[6]}-${array[7]}${array[8]}${array[9]}${array[10]}`
 
-  if(array.length!==11){
-      numeroFinal="Array com tamanho incorreto"
+  for(let i=0; i<array.length; i+=1){
+      let contador = 0
+      for(let i2=0; i2<array.length; i2+=1){
+          if(array[i]===array[i2]){
+              contador+=1
+          }
+          if(contador>=3){
+              numeroFinal = "não é possível gerar um número de telefone com esses valores";
+              break;    
+          }
+
+      }
   }
 
   for(numero of array){
@@ -14,21 +24,14 @@ const generatePhojeNumber = (array)=>{
       }
   }
 
-  let numeroRepetido=0
-
-  for(numero1 of array){
-      for(numero2 of array){
-          if (numero1===numero2){
-              numeroRepetido+=1
-          }
-      }
+  if(array.length!==11){
+      numeroFinal="Array com tamanho incorreto."
   }
 
-  if(numeroRepetido>=3){
-      numeroFinal="não é possível gerar um número de telefone com esses valores"
-  }
-
-  return numeroFinal
+ 
+  
+  
+  return numeroFinal;
 }
 
 // Desafio 12 -  Crie a função triangleCheck
